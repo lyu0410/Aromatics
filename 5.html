@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tips for using DSC</title>
+</head>
+<body>
+  <h1><a href="index.html">DSC Q2000</a></h1>
+  <ol>
+    <li><a href="5.html">Calibration</a></li>
+    <li><a href="6.html">Cleaning</a></li>
+    <li><a href="1.html">Sample preparation</a></li>
+    <li><a href="2.html">Characterize T<sub>g</sub></a></li>
+    <li><a href="4.html">Export Data</a></li>
+    <li><a href="3.html">Errors and issues</a></li>
+  </ol>
+  <h2>Calibration</h2>
+  <p>
+    <h4>When to calibrate</h4>
+    For optimum experimental results you will need to perform <U>all</U> DSC calibrations whenever you <strong>change</strong> one of the following parameters:
+    <li>First use of a new cell</li>
+    <li>Purge gas change</li>
+    <li>Cooling device or accessory change</li>
+    and also recalibration is recommended once a year and if performance has degraded over time.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Introducing the DSC Calibration Wizard</h4>
+    To calibrate the DSC you can select <strong>Calibrate/Calibration Wizard</strong> from the main menu to begin the procedure.<br>
+    The following window will be displayed and select Heat Flow T4 calibration option with the appropriate cooling unit.<br>
+    <img src="dsccal1.png" width="500px"><br><br>
+    Tzero calibration of the DSC Q2000 consists of two separate calibrations.<br>
+    The first involves running an empty cell and then running two sapphire samples to determine Cell resistance and capacitance.<br>
+    The second involves running a known enthalpy standard (indium) and evaluating the melting endotherm to determine a cell constant and to calibrate the X-axis temperature.<br><br>
+    <img src="dsccal2.png" width="500px"><br><br>
+    <li>Cell Resistance & Capacitance, Cell Constant, and Temperature Calibration - This is a full calibration <strong>'first + second'</strong> </li>
+    <li>Cell Constant & Temperature Calibration - This option calibrates the <strong>second</strong>.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Baseline Run</h4>
+    Calibration to obtain cell resistance and capacitance values involves two experiments.<br>
+    The first is based on heating an empty cell over the same temperature range that will be used in subsequent sample experiments.<br>
+    <li><strong>Calibration Range:</strong> Select "Heat and Cool calibration" that we typically obtain both heating and cooling data.</li>
+    <li><strong>Lower Temperature & Upper Temperature:</strong> <U>Typical temperature ranges are</U> -180 to 400°C for the LNCS, -90 to 400°C for the RCS90.</li>
+    <li><strong>Ramp Rate:</strong> a rate of 10°C/min is recommended.</li>
+    <li><strong>Purge Gas & Flow Rate:</strong> nitrogen & 50 mL/min</li><br>
+    Once all of the experimental parameters are entered, press Next to start the baseline experiment.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Sapphire Run</h4>
+    The second experiment required to obtain Tzero cell resistance and capacitance values involves heating the cell with two equal weight sapphire disks on the sample and reference platforms over the same temperature range and under the same experimental conditions as the previous Baseline Run. Since identical experimental conditions are required, you will not be prompted to enter that information again. You only need to weigh and enter the weights of the sapphire disks.
+    <li><strong>Sapphire Weights:</strong> Two sapphire calibration disks are included in the DSC inventory that is shown in the image below.</li><br>
+    <img src="sapphire.png" width="350px"><br>
+    Please weighing each disk on a microbalance and entering the weight in the appropriate entry field, place the disk directly on the DSC cell sample or reference positions, and close the cell.<br>
+    Once all of the experimental parameters are entered, press Next to start the sapphire run experiment.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Cell Constant Setup - Indium Run</h4>
+    The second phase of calibration involves the determination of the cell (enthalpy) constant and the x-axis temperature calibration. This calibration is usually performed using indium and the same ramp rate, purge gas, and pan type as subsequent sample experiments.
+    <li><strong>Standard/Weight:</strong> Indium - melting point 156.6°C, ΔH fusion is 28.71 J/g/ Recommended weight 1 to 5 mg.</li>
+    <li><strong>Pan Type/Sample & Reference Pan Mass:</strong> Aluminum or aluminum hermetic / Enter the weights of the empty sample and reference pans.<br><br>
+    Once all of the experimental parameters are entered, press Next to proceed to the next step to start the experiment.<br><br>
+    <li><strong>Start and Final Temperature/Heating Rate:</strong> 100 to 180° for 5 and 10°C/min 80 to 200°C for 20°C/min and above. Please use <strong>Premelt</strong> option.</li>
+    <li>Select the desired Calibration Set that will be used to save the data.</li><br>
+    Once all of the experimental parameters are entered, press Next to automatically start the cell constant experiment.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Cell Constant & Temperature Results</h4>
+    An analyzed plot of the melting peak for the metal standard appears at the end of the experiment. If you are satisfied with the analysis, press Next to save the cell constant and temperature calibration results to the instrument. Otherwise, select the Analyze button to display the analysis markers. Reposition these markers at the desired location and select Limits OK.
+  </p>
+  <p style="margin-top:40px;">
+    <h4>Verification</h4>
+    <li><strong>Baseline</strong></li>
+    After calibration run experiment with an empty cell, -80 to 400°C.<br>
+    The Recommended gap of a signal is < 100 μW.<br>
+    If there is any problem, re-verify after the cleaning process.<br><br>
+    <li><strong>Heat Flow & Temperature</strong></li>
+    Load 1 to 5 mg of indium to sample pan and run experiment same procedure as calibration.<br>
+    Calculate melting temperature and heat capacity using TA analysis software and compare the results. <strong>Note</strong>: Indium - melting point 156.6°C, ΔH fusion is 28.71 J/g. Temperature: < 1°C difference and ΔH<sub>lit</sub>/ΔH<sub>cal</sub>; 0.95 ~ 1.10.
+</body>
+</html>

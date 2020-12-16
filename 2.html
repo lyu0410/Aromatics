@@ -1,18 +1,41 @@
 <!doctype html>
 <html>
 <head>
-  <title>Aromatic Polymer - PPX</title>
+  <title>Tips for using DSC</title>
 </head>
 <body>
-  <h1><a href="index.html">Polymer</a></h1>
+  <h1><a href="index.html">DSC Q2000</a></h1>
   <ol>
-    <li><a href="1.html">Polymerization</a></li>
-    <li><a href="2.html">PPX - parylene</a></li>
-    <li><a href="3.html">PPV</a></li>
+    <li><a href="5.html">Calibration</a></li>
+    <li><a href="6.html">Cleaning</a></li>
+    <li><a href="1.html">Sample preparation</a></li>
+    <li><a href="2.html">Characterize T<sub>g</sub></a></li>
+    <li><a href="4.html">Export Data</a></li>
+    <li><a href="3.html">Errors and issues</a></li>
   </ol>
-  <h2>PPX - parylene</h2>
+  <h2>Characterize T<sub>g</sub></h2>
   <p>
-    Parylene is the common name of a polymer whose backbone consists of para-benzenediyl rings –C6H4– connected by 1,2-ethanediyl bridges –CH2–CH2–. It can be obtained by polymerization of para-xylylene H2C=C6H4=CH2.
+    <br>
+    DSC detects a change of heat capacity during transition in amorphous materials from a hard "glassy" state into a rubbery state.<br><br>
+    T<sub>g</sub> is the reversible transition and in DSC, It should detect both heating and cooling graphs.<br>
+    To determine weak T<sub>g</sub>,
+      <li>Run with empty pan to check baseline -  if baseline show bow or drift, ask a charger to clean</li>
+      <li>Use a low mass pan to increase sensitivity</li>
+      <li>Load sample as much as possible</li>
+      <li>Increase the heating and cooling rate - <strong>Note</strong>: Give 2-3 min gap to stabilize the baseline</li>
+  </p>
+  <p>
+    We have software 'TA Universal Analysis' to characterize T<sub>g</sub> that is shown in the image below.<br>
+    <img src="tg1.png" width="500px"><br>
+    <strong>Note</strong>: T<sub>g</sub> should detect both heating and cooling cycle and exothermic peak goes up in this image.<br><br>
+    Derivatives of the graph can help you to detect weak T<sub>g</sub>.<br>
+    <img src="tg4.png" width="500px"><br><br>
+    If you right-click on your graph and click <strong>Signals</strong>, you can manage the X or Y-axis. Set <strong>Y2</strong> as a Signal: Heat Flow and Type: Derivate 'temp' and click OK.<br>
+    <img src="tg2.png" width="500px"><br><br>
+    Then you can see an additional blue line with Deriv. Heat Flow on the right side. Richt-click the axis, and change Y2 value Start: -0.01 and Stop: 0.01.<br>
+    <img src="tg3.png" width="500px"><br>
+    Now you can determine T<sub>g</sub> with a broad peak in Deriv. Heat Flow.<br>
+    <strong>Note</strong>: Broad peak should observe both heating and cooling. You can double-check running another experiment with a different heating rate.
   </p>
 </body>
 </html>
